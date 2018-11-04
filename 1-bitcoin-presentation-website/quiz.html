@@ -1,0 +1,155 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bitcoin Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Style Sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!--Extra Fonts-->
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <a class="logo" href="index.html"></a>
+        <div class="logo-search"><strong>Search</strong></div>
+        <div class="logo-text"><em>Learn and Explore</em></div>
+        <ul class="navlist">
+          <li><a href="info.html">Knowledge</a></li>
+          <li><a href="https://www.facebook.com/bitcoins">Community</a></li>
+          <li><a href="https://bitcoin.org/en/choose-your-wallet">Wallets</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </header>
+    </div>
+    <!--Title Section-->
+    <section class="title">
+      <h1 style="margin: 10px auto; font-size: 40px;">Bitcoin Quiz: how much do you know</h1>
+      <br>
+      <pre>Complete the quiz in 10 minutes, and if you answer all questisons right, we may send you some free Bitcoin as a prize.</pre>
+    </section>
+    <!--Quiz Section-->
+    <section id="quiz">
+      <form action="explore.html" method="POST">
+        <fieldset id="yourself">
+          <legend>About Yourself</legend>
+          <div class="simple-input">
+            <span>Name: </span>
+            <input type="text">
+          </div>
+          <div class="simple-input">
+            <span>Email: </span>
+            <input type="email">
+          </div>
+          <div class="simple-input">
+            <span>Phone#: </span>
+            <input type="text">
+          </div>
+          <div class="simple-input">
+            <span>Bitcoin Address: </span>
+            <input type="text">
+          </div>
+        </fieldset>
+        <fieldset id="short-answer">
+          <legend>Short Answers</legend>
+          <div class="long-input">
+            <div>Who invented Bitcoin?</div>
+            <input type="text">
+            <div>Bitcoin network was first created in which year?</div>
+            <input type="text">
+            <div>How many bytes of data does a private key contain?</div>
+            <input type="text">
+            <div>What is the total number of Bitcoin that can be mined in theory?</div>
+            <input type="text">
+            <div>How many confirmations does one need in order to spend a coinbase transaction?</div>
+            <input type="text">
+          </div>
+        </fieldset>
+        <fieldset id="radio">
+          <legend>Multiple Choice</legend>
+          <span style="display: block; margin: 10px 0;">Which one of the following is a valid Bitcoin address?</span>
+          <div>
+            <div>
+              <input name="qm" type="radio">
+              <span>1NWEeSJwcMpRRFYgzKGxwgye5TVKeFLPCU</span>
+            </div>
+            <div>
+              <input name="qm" type="radio">
+              <span>2Auk1MQEx4yMRo4uKrNpd3HZjwUWcnspgz</span>
+            </div>
+            <div>
+              <input name="qm" type="radio">
+              <span>3HBCUjGvBnpXiqKcS95mbA0quQ8wVyum6F</span>
+            </div>
+            <div>
+              <input name="qm" type="radio">
+              <span>3FIMwdw7y5xLBG3vUQv9W5AphQHdFBdSu6</span>
+            </div>
+            <div>
+              <input name="qm" type="radio">
+              <span>73ZiNFqMumre6P4Q8ThyWz791NXuBhjkAv</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="checkbox">
+          <legend>Check all that Apply</legend>
+          <span style="display: block; margin: 10px 0;">Which of the following is NOT true about Bitcoin?</span>
+          <div>
+            <div>
+              <input name="qc" type="checkbox">
+              <span>Government oversight is necessary in order to make Bitcoin transactions.</span>
+            </div>
+            <div>
+              <input name="qc" type="checkbox">
+              <span>Transactions are generally considered permanent after 6 confirmations.</span>
+            </div>
+            <div>
+              <input name="qc" type="checkbox">
+              <span>Paper wallets are considered more secure than mobile wallets.</span>
+            </div>
+            <div>
+              <input name="qc" type="checkbox">
+              <span>Someone can steal from your wallet if he controls more than 50% of the network's hashing power.</span>
+            </div>
+            <div>
+              <input name="qc" type="checkbox">
+              <span>You should always try to avoid resuing Bitcoin addresses.</span>
+            </div>
+          </div>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit Answer">
+      </form>
+    </section>
+    <!--Timer Section-->
+    <section></section>
+    <footer>
+      <div class="footer">
+        <ol>
+          <li>Individuals</li>
+          <li>Businesses</li>
+        </ol>
+        <ol>
+          <li>Resources</li>
+          <li>Exchanges</li>
+          <li>Community</li>
+          <li>Events</li>
+        </ol>
+        <ol>
+          <li>Support Bitcoin</li>
+          <li>Buy Bitcoin</li>
+          <li>Donate</li>
+        </ol>
+        <ol>
+          <li>Legal</li>
+          <li>Privacy Policy</li>
+          <li>Press</li>
+        </ol>
+      </div>
+      <div id="copyright">© Bitcoin Project 2009-2018</div>
+      <div id="author">Web Portal presented by Eddy Soma</div>
+    </footer>
+  </body>
+</html>

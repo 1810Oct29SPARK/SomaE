@@ -1,0 +1,540 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #505050;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+a, a:hover, a:visited {
+	text-decoration: none;
+	color: #6b6b6b;
+}
+
+header {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+nav {
+	height: 40px;
+	margin-top: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border: 1px black solid;
+}
+
+footer div.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 1px black solid;
+}
+
+footer ol {
+	display: flex;
+	padding: 0;
+	flex-direction: column;
+	justify-content: top left;
+	list-style: none;
+	border: 1px black solid;
+}
+
+footer li {
+	font-size: 16px;
+	margin: 10px 0;
+	border: 1px black solid;
+}
+
+pre {
+	font-size: 14px;
+	border: 1px black solid;
+}
+
+h5 {
+	font-size: 16px;
+	border: 1px black solid;
+}
+
+article {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+article > div {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+article > div > div {
+	flex: 1 1 0;
+	min-width: 640px;
+	margin: 20px 20px;
+	border: 1px black solid;
+}
+
+aside {
+	position: fixed;
+	min-height: 40px;
+	padding-top: 10px;
+	bottom: 0;
+	background-color: white;
+	border: 1px black solid;
+}
+
+
+aside a {
+	margin: 0 20px;
+	font-size: 20px;
+	border: 1px black solid;
+}
+
+legend {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.logo {
+	display: block;
+	margin: 0;
+	width: 191px;
+	min-width: 191px;
+	height: 40px;
+	float: left;
+	background-image: url("../images/logo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px black solid;
+}
+
+.logo-search {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin: 0;
+	float: right;
+	border: 1px black solid;
+}
+
+.logo-text {
+	display: block;
+	width: 700px;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	font-weight: 800;
+	border: 1px black solid;
+}
+
+.navlist {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 20px 0 0 0;
+	padding: 0;
+	height: 40px;
+	list-style: none;
+	border: 1px black solid;
+}
+
+.navlist li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+	border: 1px black solid;
+}
+
+section.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+.inter-image {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+.concept-table {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.concept-table th {
+	max-width: 200px;
+	margin: 0;
+	border: 1px black solid;
+}
+
+.concept-table th img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.concept-table td {
+	text-align: center;
+	border: 1px black solid;
+}
+
+.title {
+	text-align: center;
+}
+
+.title h1 {
+	margin: 10px auto;
+	font-size: 40px;
+}
+
+.title h5 {
+	margin: 20px auto;
+}
+
+.span-box {
+	display: flex;
+	flex-flow: column wrap;
+	list-style-type: square;
+	border: 1px black solid;
+}
+
+.span-box li {
+	flex: 1 1 0;
+	margin: 8px 0;
+	min-width: 320px;
+	border: 1px black solid;
+}
+
+.tech-img {
+	min-width: 128px;
+	min-height: 128px;
+}
+
+.tech-name {
+	margin: auto;
+}
+
+.simple-input {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	margin: 10px auto;
+	border: 1px black solid;
+}
+
+.simple-input span {
+	flex: 1 1 0;
+	max-width: 20%;
+	border: 1px black solid;
+}
+
+.simple-input input {
+	flex: 1 1 0;
+	border: 1px black solid;
+}
+
+.long-input {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: left;
+	border: 1px black solid;
+}
+
+.long-input div, .long-input input {
+	flex: 1 1 0;
+	margin: 10px 0;
+}
+
+#promo-text {
+	width: 70%;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 30px;
+	line-height: 1.5;
+	border: 1px black solid;
+}
+
+#promo-text-2 {
+	width: 60%;
+	margin: 20px auto;
+	font-size: 20px;
+	text-align: center;
+	border: 1px black solid;
+}
+
+#blockchain {
+	border: 1px black solid;
+}
+
+#github {
+	border: 1px black solid;
+}
+
+#youtube {
+	height: 40px;
+	margin-top: 8px;
+	display: flex;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+#youtube-icon {
+	background: url("../images/youtube.png") no-repeat;
+	background-size: contain;
+	margin: 0 20px;
+	width: 40px;
+	height: 40px;
+}
+
+#key {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#signup {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 40px auto;
+	padding: 0;
+	border: 1px black solid;
+}
+
+#signup-msg {
+	min-width: 30%;
+	font-size: 18px;
+	margin: auto;
+	margin-left: 0;
+	max-width: 480px;
+	line-height: 1.6;
+	border: 1px black solid;
+}
+
+#signup-btn {
+	text-align: center;
+	text-decoration: underline;
+	max-width: 180px;
+	margin: auto;
+	margin-left: 180px;
+	border: 1px black solid;
+}
+
+#live-update {
+	margin: 40px auto;
+}
+
+#copyright {
+	text-align: right;
+	width: 95%;
+	border: 1px black solid;
+}
+
+#author {
+	text-align: right;
+	width: 95%;
+	border: 1px black solid;
+}
+
+#introduction p {
+	line-height: 1.5;
+	margin: 20px 0;
+}
+
+#wallet p {
+	line-height: 1.5;
+	margin: 20px 0;
+}
+
+#disadvantages h6 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+#terms {
+	margin: 20px 0;
+	margin-left: 20px;
+	border: 1px black solid;
+}
+
+#terms div {
+	display: flex;
+	flex-flow: column wrap;
+	border: 1px black solid;
+}
+
+#terms div span {
+	margin-bottom: 15px;
+	border: 1px black solid;
+}
+
+#techs {
+	margin: 20px 0;
+	border: 1px black solid;
+}
+
+#techs div {
+	display: flex;
+	flex-flow: column wrap;
+	max-width: 800px;
+	margin: auto;
+	border: 1px black solid;
+}
+
+#techs div a {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+	border: 1px black solid;
+}
+
+#techs div a span.tech-img {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	max-width: 128px;
+	max-height: 128px;
+	border: 1px black solid;
+}
+
+#techs div a span.tech-name {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: 700;
+	border: 1px black solid;
+}
+
+#techs div a span img {
+	flex: 1 1 0;
+	min-width: 128px;
+	min-height: 128px;
+	max-width: 128px;
+	max-height: 128px;
+	border: 1px black solid;
+}
+
+#quiz {
+	margin: 40px auto;
+	border: 1px black solid;
+}
+
+#quiz form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+#quiz form fieldset {
+	margin: 20px auto;
+	flex: 1 1 0;
+	min-width: 800px;
+	border: 1px black solid;
+}
+
+#quiz form > input {
+	margin: 20px auto;
+	border: 1px black solid;
+}
+
+#radio > div {
+	display: flex;
+	flex-direction: column;
+}
+
+#radio > div > div {
+	margin: 10px 0;
+	border: 1px black solid;
+}
+
+#radio > div span {
+	display: inline-block;
+	margin-left: 20px;
+	min-width: 480px;
+	border: 1px black solid;
+}
+
+#checkbox > div {
+	display: flex;
+	flex-direction: column;
+}
+
+#checkbox > div > div {
+	margin: 10px 0;
+	border: 1px black solid;
+}
+
+#checkbox > div span {
+	display: inline-block;
+	margin-left: 20px;
+	border: 1px black solid;
+}
+
+#submit {
+	font-size: 20px;
+	font-weight: 700;
+	background-color: white;
+	cursor: pointer;
+	border: 1px black solid;
+}
+
+#social {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border: 1px black solid;
+}
+
+#social > a {
+	display: inline-block;
+	margin: auto 16px;
+	width: 32px;
+	height: 32px;
+	border-radius: 8px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#s1 {
+	background-image: url("../images/social1.png");
+}
+
+#s2 {
+	background-image: url("../images/social2.png");
+}
+
+#s3 {
+	background-image: url("../images/social3.png");
+}
+
+#s4 {
+	background-image: url("../images/social4.png");
+}
+
+#donate {
+	text-align: center;
+}
+
+#qr {
+	width: 160px;
+	height: 160px;
+	background-image: url(../images/qr.png);
+	background-size: contain;
+	margin: 40px auto;
+}
