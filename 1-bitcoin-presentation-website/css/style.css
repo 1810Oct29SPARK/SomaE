@@ -15,7 +15,7 @@ a, a:hover, a:visited {
 
 header {
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	padding: 0;
 	box-sizing: border-box;
 	vertical-align: top;
@@ -27,14 +27,24 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	border: 1px black solid;
+	text-align: center;
+}
+
+footer {
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-color: #13161f;
+	color: #9d9d9d;
 }
 
 footer div.footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	border: 1px black solid;
+	color: white;
+	margin-bottom: 20px;
 }
 
 footer ol {
@@ -43,23 +53,19 @@ footer ol {
 	flex-direction: column;
 	justify-content: top left;
 	list-style: none;
-	border: 1px black solid;
 }
 
 footer li {
 	font-size: 16px;
 	margin: 10px 0;
-	border: 1px black solid;
 }
 
 pre {
 	font-size: 14px;
-	border: 1px black solid;
 }
 
 h5 {
 	font-size: 16px;
-	border: 1px black solid;
 }
 
 article {
@@ -71,30 +77,44 @@ article > div {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	border: 1px black solid;
 }
 
 article > div > div {
 	flex: 1 1 0;
 	min-width: 640px;
 	margin: 20px 20px;
-	border: 1px black solid;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: rgba(255, 166, 0, 0.158);
+}
+
+article > div > div h4 {
+	background-color: rgba(255, 166, 0, 0.5);
+	border: solid #13161faf 1px;
+	padding: 5px;
 }
 
 aside {
 	position: fixed;
-	min-height: 40px;
-	padding-top: 10px;
+	min-height: 20px;
+	padding: 10px;
 	bottom: 0;
-	background-color: white;
-	border: 1px black solid;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 10px;
 }
 
 
 aside a {
 	margin: 0 20px;
-	font-size: 20px;
-	border: 1px black solid;
+	font-size: 16px;
+}
+
+aside a:hover {
+	color: orangered;
+	font-size: 18;
+	font-weight: 700;
+	padding: 4px;
+	background-color: #13161f1f;
 }
 
 legend {
@@ -105,6 +125,8 @@ legend {
 .logo {
 	display: block;
 	margin: 0;
+	margin-left: 80px;
+	margin-top: 20px;
 	width: 191px;
 	min-width: 191px;
 	height: 40px;
@@ -112,15 +134,16 @@ legend {
 	background-image: url("../images/logo.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	border: 1px black solid;
 }
 
 .logo-search {
 	text-transform: uppercase;
-	font-size: 30px;
-	margin: 0;
+	font-size: 20px;
+	font-weight: 400;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-top: 20px;
 	float: right;
-	border: 1px black solid;
 }
 
 .logo-text {
@@ -129,34 +152,36 @@ legend {
 	clear: both;
 	margin: 0;
 	padding: 0;
+	margin-left: 80px;
+	margin-top: 20px;
 	font-size: 40px;
 	font-weight: 800;
-	border: 1px black solid;
 }
 
 .navlist {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	margin: 20px 0 0 0;
+	margin: 40px 0 0 0;
 	padding: 0;
-	height: 40px;
+	height: 60px;
 	list-style: none;
-	border: 1px black solid;
 }
 
 .navlist li {
 	display: inline-block;
 	font-size: 20px;
-	padding: 10px;
-	border: 1px black solid;
+	padding: 15px 20px;
+	background-color: rgb(255, 255, 255);
+	color: #13161f;
+	border: 6px double rgba(0, 0, 0, 0.5);
+	border-radius: 24px 0;
 }
 
 section.intro {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 1px black solid;
 }
 
 .inter-image {
@@ -164,32 +189,42 @@ section.intro {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 1px black solid;
+	background-image: url("../images/network-transparent.png");
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .concept-table {
-	width: 80%;
-	margin: 0 auto;
+	width: 70%;
+	margin: 20px auto;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.concept-table thead, .concept-table tbody, .concept-table tfoot {
+	margin-bottom: 20px;
 }
 
 .concept-table th {
 	max-width: 200px;
-	margin: 0;
-	border: 1px black solid;
+	padding-bottom: 20px;
 }
 
 .concept-table th img {
 	max-width: 200px;
 	max-height: 200px;
+	border-radius: 50px;
 }
 
-.concept-table td {
-	text-align: center;
-	border: 1px black solid;
+.concept-table tbody {
+	font-size: 18px;
+	font-weight: 700;
+	color: black;
 }
 
 .title {
 	text-align: center;
+	border-bottom: 8px double rgb(80, 80, 80);
 }
 
 .title h1 {
@@ -205,14 +240,12 @@ section.intro {
 	display: flex;
 	flex-flow: column wrap;
 	list-style-type: square;
-	border: 1px black solid;
 }
 
 .span-box li {
 	flex: 1 1 0;
 	margin: 8px 0;
 	min-width: 320px;
-	border: 1px black solid;
 }
 
 .tech-img {
@@ -228,31 +261,34 @@ section.intro {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: left;
-	margin: 10px auto;
-	border: 1px black solid;
+	margin: 20px auto;
 }
 
 .simple-input span {
 	flex: 1 1 0;
 	max-width: 20%;
-	border: 1px black solid;
 }
 
 .simple-input input {
 	flex: 1 1 0;
-	border: 1px black solid;
+	border: 2px rgba(0, 0, 0, 0.507) solid;
+	min-height: 30px;
 }
 
 .long-input {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: left;
-	border: 1px black solid;
 }
 
 .long-input div, .long-input input {
 	flex: 1 1 0;
 	margin: 10px 0;
+}
+
+.long-input input {
+	border: 2px rgba(0, 0, 0, 0.507) solid;
+	min-height: 30px;
 }
 
 #promo-text {
@@ -261,7 +297,6 @@ section.intro {
 	text-align: center;
 	font-size: 30px;
 	line-height: 1.5;
-	border: 1px black solid;
 }
 
 #promo-text-2 {
@@ -269,23 +304,32 @@ section.intro {
 	margin: 20px auto;
 	font-size: 20px;
 	text-align: center;
-	border: 1px black solid;
 }
 
 #blockchain {
-	border: 1px black solid;
+	margin: auto;
+	margin-right: 16px;
+	padding: 16px;
+	background-color: orange;
+	color: white;
+	min-width: 300px;
 }
 
 #github {
-	border: 1px black solid;
+	margin: auto;
+	margin-left: 16px;
+	padding: 16px;
+	border: 2px orange solid;
+	color: orange;
+	min-width: 300px;
 }
 
 #youtube {
 	height: 40px;
-	margin-top: 8px;
+	margin-top: 80px;
+	margin-bottom: 40px;
 	display: flex;
 	justify-content: center;
-	border: 1px black solid;
 }
 
 #youtube-icon {
@@ -298,7 +342,8 @@ section.intro {
 
 #key {
 	display: inline-block;
-	margin: 0 auto;
+	margin: 40px auto;
+	font-size: 25px;
 }
 
 #signup {
@@ -307,7 +352,6 @@ section.intro {
 	justify-content: center;
 	margin: 40px auto;
 	padding: 0;
-	border: 1px black solid;
 }
 
 #signup-msg {
@@ -316,17 +360,20 @@ section.intro {
 	margin: auto;
 	margin-left: 0;
 	max-width: 480px;
+	padding: 20px;
+	border-radius: 20px;
 	line-height: 1.6;
-	border: 1px black solid;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 #signup-btn {
 	text-align: center;
-	text-decoration: underline;
 	max-width: 180px;
 	margin: auto;
 	margin-left: 180px;
-	border: 1px black solid;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(255, 166, 0, 0.596);
 }
 
 #live-update {
@@ -335,14 +382,13 @@ section.intro {
 
 #copyright {
 	text-align: right;
-	width: 95%;
-	border: 1px black solid;
+	width: 90%;
+	margin-bottom: 5px;
 }
 
 #author {
 	text-align: right;
-	width: 95%;
-	border: 1px black solid;
+	width: 90%;
 }
 
 #introduction p {
@@ -363,25 +409,22 @@ section.intro {
 }
 
 #terms {
-	margin: 20px 0;
-	margin-left: 20px;
-	border: 1px black solid;
+	margin: 40px 20px;
 }
 
 #terms div {
 	display: flex;
 	flex-flow: column wrap;
-	border: 1px black solid;
+	padding: 20px;
+	background-color: rgba(255, 68, 0, 0.158);
 }
 
 #terms div span {
-	margin-bottom: 15px;
-	border: 1px black solid;
+	margin-bottom: 20px;
 }
 
 #techs {
-	margin: 20px 0;
-	border: 1px black solid;
+	margin: 60px 0;
 }
 
 #techs div {
@@ -389,7 +432,9 @@ section.intro {
 	flex-flow: column wrap;
 	max-width: 800px;
 	margin: auto;
-	border: 1px black solid;
+	margin-top: 40px;
+	background-image: url("../images/network-gray.png");
+	background-attachment: fixed;
 }
 
 #techs div a {
@@ -397,7 +442,13 @@ section.intro {
 	flex-flow: row wrap;
 	justify-content: center;
 	margin-bottom: 20px;
-	border: 1px black solid;
+	padding: 5px;
+	border: 3px rgba(0, 0, 0, 0.651) dashed;
+	border-radius: 20px 0;
+}
+
+#techs div a:hover {
+	background-color: rgba(255, 0, 0, 0.301);
 }
 
 #techs div a span.tech-img {
@@ -407,7 +458,6 @@ section.intro {
 	justify-content: flex-end;
 	max-width: 128px;
 	max-height: 128px;
-	border: 1px black solid;
 }
 
 #techs div a span.tech-name {
@@ -417,7 +467,6 @@ section.intro {
 	justify-content: center;
 	font-size: 24px;
 	font-weight: 700;
-	border: 1px black solid;
 }
 
 #techs div a span img {
@@ -426,26 +475,28 @@ section.intro {
 	min-height: 128px;
 	max-width: 128px;
 	max-height: 128px;
-	border: 1px black solid;
 }
 
 #quiz {
 	margin: 40px auto;
-	border: 1px black solid;
 }
 
 #quiz form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 1px black solid;
+	background-image: url("../images/network-gray.png");
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #quiz form fieldset {
 	margin: 20px auto;
+	padding: 40px;
 	flex: 1 1 0;
 	min-width: 800px;
-	border: 1px black solid;
+	border: none;
+	border-top: 4px #505050 ridge;
 }
 
 #quiz form > input {
@@ -460,14 +511,12 @@ section.intro {
 
 #radio > div > div {
 	margin: 10px 0;
-	border: 1px black solid;
 }
 
 #radio > div span {
 	display: inline-block;
 	margin-left: 20px;
 	min-width: 480px;
-	border: 1px black solid;
 }
 
 #checkbox > div {
@@ -477,13 +526,11 @@ section.intro {
 
 #checkbox > div > div {
 	margin: 10px 0;
-	border: 1px black solid;
 }
 
 #checkbox > div span {
 	display: inline-block;
 	margin-left: 20px;
-	border: 1px black solid;
 }
 
 #submit {
@@ -491,14 +538,20 @@ section.intro {
 	font-weight: 700;
 	background-color: white;
 	cursor: pointer;
-	border: 1px black solid;
+	padding: 10px 40px;
+	color: #6b6b6b;
+	transition-duration: 0.4s;
+}
+
+#submit:hover {
+	background-color: orange;
+	color: white;
 }
 
 #social {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	border: 1px black solid;
 }
 
 #social > a {
@@ -529,6 +582,7 @@ section.intro {
 
 #donate {
 	text-align: center;
+	margin-bottom: 80px;
 }
 
 #qr {
