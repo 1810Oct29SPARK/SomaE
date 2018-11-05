@@ -1,0 +1,22 @@
+Designer
+Eddy Soma
+
+Theme/Purpose
+A website for managing personal investment portfolios.
+
+Basic Use Cases
+1. User can register a new account for their portfolio.
+2. User can login to their account after registration to view their portfolio.
+3. User can deposit funds into their portfolio in the form of US dollars.
+4. User can withdraw funds from their account.
+5. User can use their funds to invest in market assets like stocks and bonds, etc.
+6. User can check the return on their investment.
+7. User can close their account.
+
+Advanced Use Cases (tentative)
+1. User can deposit all forms of national currencies, cryptocurrencies, or precious metals.
+2. User can view the exchange rates between different assets.
+3. User can convert their assets into other forms.
+4. User can create their retirement plan with their portfolio.
+5. User can use a web calculator to get an estimate of their retirement monthly payments.
+6. User can become a premium member of us with a subscription fee and background check. Premium members will have access to our expert investment advice, accounting services, and exclusive offers.
