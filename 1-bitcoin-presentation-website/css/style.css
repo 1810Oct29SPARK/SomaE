@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
+	font-family: 'Titillium Web', Arial, sans-serif;
 	font-size: 16px;
 	color: #505050;
 	background-color: white;
@@ -19,6 +19,7 @@ header {
 	padding: 0;
 	box-sizing: border-box;
 	vertical-align: top;
+	font-family: 'Ubuntu', 'Titillium Web', Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -155,7 +156,7 @@ legend {
 	margin-left: 80px;
 	margin-top: 20px;
 	font-size: 40px;
-	font-weight: 800;
+	font-weight: 900;
 }
 
 .navlist {
@@ -378,6 +379,7 @@ section.intro {
 
 #live-update {
 	margin: 40px auto;
+	margin-bottom: 80px;
 }
 
 #copyright {
