@@ -382,6 +382,20 @@ section.intro {
 	margin-bottom: 80px;
 }
 
+#live-update h1 {
+	margin: auto;
+	margin-bottom: 40px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#live-update div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+
 #copyright {
 	text-align: right;
 	width: 90%;
