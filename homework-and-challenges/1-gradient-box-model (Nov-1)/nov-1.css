@@ -1,0 +1,171 @@
+/*Set the Background Color to Black*/
+/*Close All Margins*/
+body {
+	margin: 0;
+	background-color: black;
+}
+
+/*Use Margin to Set Space between the Two Gradient Boxes*/
+/*Starting Background Color is Close to Pure Black*/
+.gradient-box {
+	margin-bottom: 20px;
+	width: 250;
+	height: 250;
+	background-color: rgb(15, 15, 0);
+}
+
+/*Use Width and Height to Adjust the Dimensions of Subsequent Layers*/
+/*Gradually Turning the Background Color from Black to Yellow*/
+.gra1 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(25, 25, 0);
+}
+
+.gra2 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(35, 35, 0);
+}
+.gra3 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(45, 45, 0);
+}
+.gra4 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(55, 55, 0);
+}
+.gra5 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(65, 65, 0);
+}
+
+.gra6 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(75, 75, 0);
+}
+
+.gra7 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(85, 85, 0);
+}
+
+.gra8 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(95, 95, 0);
+}
+
+.gra9 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(105, 105, 0);
+}
+
+.gra10 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(115, 115, 0);
+}
+
+.gra11 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(125, 125, 0);
+}
+
+.gra12 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(135, 135, 0);
+}
+
+.gra13 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(145, 145, 0);
+}
+
+.gra14 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(155, 155, 0);
+}
+
+.gra15 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(165, 165, 0);
+}
+
+.gra16 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(175, 175, 0);
+}
+
+.gra17 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(185, 185, 0);
+}
+
+.gra18 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(195, 195, 0);
+}
+
+.gra19 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(205, 205, 0);
+}
+
+.gra20 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(215, 215, 0);
+}
+
+.gra21 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(225, 225, 0);
+}
+
+.gra22 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(235, 235, 0);
+}
+
+.gra23 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(245, 245, 0);
+}
+
+.gra24 {
+	width: 97%;
+	height: 97%;
+	background-color: rgb(255, 255, 0);
+}
+
+/*Use Height and Width to Set the Dimension for Each Little Box*/
+/*Use Margin to Separate the Little Boxes*/
+/*Use Background-color and Border to Change the Appearance of Boxes*/
+/*Use Float to Make Boxes Shown as Inline Elements Aligned to the Left Side*/
+.little-box {
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+	border: green 2px solid;
+	background-color: red;
+	float: left;
+}
