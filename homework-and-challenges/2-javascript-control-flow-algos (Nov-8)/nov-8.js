@@ -12,7 +12,7 @@ var homework = {};
 // Fibonacci Solution One (for loop)
 homework.fibonacciOne = function(num) {
 	// Input Sanitization
-	if (isNaN(Number(num)) || !Number.isInteger(num) || num < 1) {
+	if (isNaN(Number(num)) || !Number.isInteger(num) || num < 0) {
 		return "Invalid Input(s)";
 	}
 
@@ -33,7 +33,7 @@ homework.fibonacciOne = function(num) {
 // Fibonacci Solution Two (recursion with memo for performance)
 homework.fibonacciTwo = function(num) {
 	// Input Sanitization
-	if (isNaN(Number(num)) || !Number.isInteger(num) || num < 1) {
+	if (isNaN(Number(num)) || !Number.isInteger(num) || num < 0) {
 		return "Invalid Input(s)";
 	}
 
