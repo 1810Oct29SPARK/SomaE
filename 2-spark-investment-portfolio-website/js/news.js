@@ -29,6 +29,29 @@ const formatCrypto = function(data, symbol) {
 	}
 }
 
+// Formatting sector data
+const formatSector = function(secName, secData) {
+	secData = toTwoDecimal(parseFloat(secData) * 100);
+	if (secData > 0) {
+		$("#sec" + secName).html("+" + secData + "%");
+		$("#sec" + secName).removeClass("flat-bg");
+		$("#sec" + secName).removeClass("down-bg");
+		$("#sec" + secName).addClass("up-bg");
+	}
+	else if (secData < 0) {
+		$("#sec" + secName).html(secData + "%");
+		$("#sec" + secName).removeClass("flat-bg");
+		$("#sec" + secName).removeClass("up-bg");
+		$("#sec" + secName).addClass("down-bg");
+	}
+	else {
+		$("#sec" + secName).html(secData + "%");
+		$("#sec" + secName).addClass("flat-bg");
+		$("#sec" + secName).removeClass("up-bg");
+		$("#sec" + secName).removeClass("down-bg");
+	}
+}
+
 // Update crypto prices in the table
 const updateCryptoTable = function(data) {
 	// BTC
@@ -82,9 +105,120 @@ const updateCryptoTable = function(data) {
 	formatCrypto(qtumData, qtumSymbol);
 }
 
+// Update sector performance
+const updateSectorPerformance = function(data) {
+	for (let i in data) {
+		switch (data[i].name) {
+			case "Energy":
+			formatSector("En", data[i].performance);
+			break;
+			case "Consumer Discretionary":
+			formatSector("Cd", data[i].performance);
+			break;
+			case "Consumer Staples":
+			formatSector("Cs", data[i].performance);
+			break;
+			case "Financials":
+			formatSector("Fi", data[i].performance);
+			break;
+			case "Health Care":
+			formatSector("Hc", data[i].performance);
+			break;
+			case "Industrials":
+			formatSector("In", data[i].performance);
+			break;
+			case "Materials":
+			formatSector("Ma", data[i].performance);
+			break;
+			case "Real Estate":
+			formatSector("Re", data[i].performance);
+			break;
+			case "Technology":
+			formatSector("Te", data[i].performance);
+			break;
+			case "Utilities":
+			formatSector("Ut", data[i].performance);
+			break;
+			case "Communication Services":
+			formatSector("Co", data[i].performance);
+			break;
+		}
+	}
+}
+
+// Update gainers table
+const updateGainersTable = function(data) {
+	clearGainers();
+	for (let i in data) {
+		// Create elements
+		var $newRow = $("<tr></tr>");
+		var $head = $("<td></td>");
+		var $change = $("<td></td>");
+		var $price = $("<td></td>");
+		var $symbol = $("<div></div>");
+		var $name = $("<div></div>");
+		// Fill elements
+		$symbol.html(data[i].symbol).addClass("stock-symbol");
+		$name.html(shortenName(data[i].companyName)).addClass("company-name");
+		$price.html(toTwoDecimal(data[i].latestPrice)).addClass("font-weight-bold");
+		$change.html("+" + toTwoDecimal(parseFloat(data[i].changePercent) * 100) + "%").addClass("up");
+		// Attach elements
+		$head.append($symbol, $name);
+		$newRow.append($head, $change, $price);
+		$("#gainers-tbody").append($newRow);
+	}
+}
+
+// Update Losers table
+const updateLosersTable = function(data) {
+	clearLosers();
+	for (let i in data) {
+		// Create elements
+		var $newRow = $("<tr></tr>");
+		var $head = $("<td></td>");
+		var $change = $("<td></td>");
+		var $price = $("<td></td>");
+		var $symbol = $("<div></div>");
+		var $name = $("<div></div>");
+		// Fill elements
+		$symbol.html(data[i].symbol).addClass("stock-symbol");
+		$name.html(shortenName(data[i].companyName)).addClass("company-name");
+		$price.html(toTwoDecimal(data[i].latestPrice)).addClass("font-weight-bold");
+		$change.html(toTwoDecimal(parseFloat(data[i].changePercent) * 100) + "%").addClass("down");
+		// Attach elements
+		$head.append($symbol, $name);
+		$newRow.append($head, $change, $price);
+		$("#losers-tbody").append($newRow);
+	}
+}
+
+// Clear gainers/losers table data
+const clearGainers = function() {
+	$("#gainers-tbody").empty();
+}
+
+const clearLosers = function() {
+	$("#losers-tbody").empty();
+}
+
 // Make an API call to retrieve crypto data
 const getCryptoData = function() {
 	fetchFromAPI(cryptoEndPoint, fetchOptionsDefault, updateCryptoTable, logStatus);
+}
+
+// Make an API call to retrieve sector data
+const getSectorData = function() {
+	fetchFromAPI(sectorEndPoint, fetchOptionsDefault, updateSectorPerformance, logStatus);
+}
+
+// Make an API call to retrieve gainers data
+const getGainersData = function() {
+	fetchFromAPI(gainersEndPoint, fetchOptionsDefault, updateGainersTable, logStatus);
+}
+
+// Make an API call to retrieve losers data
+const getLosersData = function() {
+	fetchFromAPI(losersEndPoint, fetchOptionsDefault, updateLosersTable, logStatus);
 }
 
 // Wait until the document is ready for JQuery

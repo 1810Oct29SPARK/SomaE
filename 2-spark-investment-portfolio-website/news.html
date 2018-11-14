@@ -64,9 +64,9 @@
           <tr>
             <th scope="col">Symbol</th>
             <th scope="col">Company Name</th>
-            <th scope="col">Latest Price</th>
+            <th scope="col">Last Price</th>
             <th scope="col">Raw Change</th>
-            <th scope="col">% Change</th>
+            <th scope="col">Change %</th>
             <th scope="col">High</th>
             <th scope="col">Low</th>
           </tr>
@@ -166,9 +166,160 @@
       </table>
     </section>
     <!--Sector Performance-->
-    <section></section>
-    <!--Winners and Losers-->
-    <section></section>
+    <section id="sector-aggre" class="container sect">
+      <h1 style="margin-bottom: 40px;">Sector Performance</h1>
+      <div id="sector-card">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Financials</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector1.png" alt="sec1"></p>
+                <div id="secFi" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Industrials</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector2.png" alt="sec1"></p>
+                <div id="secIn" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Utilities</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector3.png" alt="sec1"></p>
+                <div id="secUt" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Real-Estate</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector4.png" alt="sec1"></p>
+                <div id="secRe" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Technology</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector5.png" alt="sec1"></p>
+                <div id="secTe" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Discretionary</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector6.png" alt="sec1"></p>
+                <div id="secCd" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Staples</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector7.png" alt="sec1"></p>
+                <div id="secCs" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Materials</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector8.png" alt="sec1"></p>
+                <div id="secMa" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Communication</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector9.png" alt="sec1"></p>
+                <div id="secCo" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Healthcare</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector10.png" alt="sec1"></p>
+                <div id="secHc" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Energy</h5>
+                <p class="card-text"><img width="128px" height="128px" src="images/sector11.png" alt="sec1"></p>
+                <div id="secEn" class="container flat-bg">0.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Gainers and Losers-->
+    <section id="gainer-loser" class="container sect">
+      <h1 style="margin-bottom: 40px;">Top Gainers and Losers</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Change %</th>
+                <th scope="col">Last Price</th>
+              </tr>
+            </thead>
+            <tbody id="gainers-tbody">
+              <tr>
+                <td>
+                  <div class="stock-symbol">N/A</div>
+                  <div class="company-name">No Data</div>
+                </td>
+                <td>0.00%</td>
+                <td>0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Change %</th>
+                <th scope="col">Last Price</th>
+              </tr>
+            </thead>
+            <tbody id="losers-tbody">
+              <tr>
+                <td>
+                  <div class="stock-symbol">N/A</div>
+                  <div class="company-name">No Data</div>
+                </td>
+                <td>0.00%</td>
+                <td>0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
     <!--Individual Stocks-->
     <section></section>
     <!--News Search-->

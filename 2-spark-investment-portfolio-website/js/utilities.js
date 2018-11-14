@@ -5,7 +5,7 @@ const cryptoEndPoint = "https://api.iextrading.com/1.0/stock/market/crypto";
 const sectorEndPoint = "https://api.iextrading.com/1.0/stock/market/sector-performance";
 // Gainers & Losers Data
 const gainersEndPoint = "https://api.iextrading.com/1.0/stock/market/list/gainers";
-const loserEndPoint = "https://api.iextrading.com/1.0/stock/market/list/losers";
+const losersEndPoint = "https://api.iextrading.com/1.0/stock/market/list/losers";
 
 // Fetch Options
 const fetchOptionsDefault = {
@@ -47,4 +47,17 @@ const toTwoDecimal = function(num) {
 const leastTwoDecimal = function(num) {
 	num = parseFloat(num);
 	return num.toFixed(Math.max(2, (num.toString().split('.')[1] || []).length));
+}
+
+// Cut a Company's Name to Two Words
+const shortenName = function(name) {
+	let finalName = "";
+	let words = name.split(" ");
+	if (words[0]) {
+		finalName += words[0];
+	}
+	if (words[1]) {
+		finalName += " " + words[1];
+	}
+	return finalName;
 }
