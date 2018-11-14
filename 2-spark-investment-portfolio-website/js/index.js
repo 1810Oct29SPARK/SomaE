@@ -1,3 +1,4 @@
+// Enable animation for quote tabs
 let updateQuotes = function() {
 	// Skip if the tabs are disabled
 	if ($(this).hasClass("disabled") | $(this).find("span").hasClass("active")) {

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEFC News</title>
+    <!--Bootstrap 4 CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <!--Extra Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <!--Top Navbar-->
+      <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a id="navbar-brand" class="navbar-brand" href="index.html">
+          <img src="images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="SE-logo">
+          <strong style="font-size: 40px; font-weight: 600; font-family: 'Condiment'; color: rgba(0, 0, 0, 0.75)">SE Fortune Capital</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-links">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://finance.yahoo.com/" target="_blank">Market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Invest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Assets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+          <button id="nav-contact" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Contact Us</button>
+        </div>
+      </nav>
+      <!--Head Banner-->
+      <div id="banner-jumbo-h" class="jumbotron">
+        <div class="container">
+          <h1 id="first-h" class="display-4 show" style="margin-bottom: 10px; font-family: 'Lato'; font-size: 40px;">Fastest market data.</h1>
+          <h1 id="second-h" class="display-4 show" style="font-family: 'Lato'; font-size: 40px;">Latest financial news and report.</h1>
+        </div>
+      </div>
+    </header>
+    <!--Crypto Prices-->
+    <section id="crypto-aggre" class="container sect">
+      <h1 style="margin-bottom: 40px;">Real Time Data on Major Cryptocurrencies (Intraday)</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Latest Price</th>
+            <th scope="col">Raw Change</th>
+            <th scope="col">% Change</th>
+            <th scope="col">High</th>
+            <th scope="col">Low</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/btc.png" alt="btc">BTC-USD</th>
+            <td>Bitcoin USD</td>
+            <td id="btc-p">0.00</td>
+            <td id="btc-cc">0.00</td>
+            <td id="btc-cp">0.00%</td>
+            <td id="btc-h">0.00</td>
+            <td id="btc-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/eos.png" alt="eos">EOS-USD</th>
+            <td>EOS USD</td>
+            <td id="eos-p">0.00</td>
+            <td id="eos-cc">0.00</td>
+            <td id="eos-cp">0.00%</td>
+            <td id="eos-h">0.00</td>
+            <td id="eos-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/eth.png" alt="eth">ETH-USD</th>
+            <td>Ethereum USD</td>
+            <td id="eth-p">0.00</td>
+            <td id="eth-cc">0.00</td>
+            <td id="eth-cp">0.00%</td>
+            <td id="eth-h">0.00</td>
+            <td id="eth-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/bnb.png" alt="bnb">BNB-USD</th>
+            <td>Binance Coin USD</td>
+            <td id="bnb-p">0.00</td>
+            <td id="bnb-cc">0.00</td>
+            <td id="bnb-cp">0.00%</td>
+            <td id="bnb-h">0.00</td>
+            <td id="bnb-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/bch.png" alt="bch">BCH-USD</th>
+            <td>Bitcoin Cash USD</td>
+            <td id="bch-p">0.00</td>
+            <td id="bch-cc">0.00</td>
+            <td id="bch-cp">0.00%</td>
+            <td id="bch-h">0.00</td>
+            <td id="bch-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/xrp.png" alt="xrp">XRP-USD</th>
+            <td>Ripple USD</td>
+            <td id="xrp-p">0.00</td>
+            <td id="xrp-cc">0.00</td>
+            <td id="xrp-cp">0.00%</td>
+            <td id="xrp-h">0.00</td>
+            <td id="xrp-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/ltc.png" alt="ltc">LTC-USD</th>
+            <td>Litecoin USD</td>
+            <td id="ltc-p">0.00</td>
+            <td id="ltc-cc">0.00</td>
+            <td id="ltc-cp">0.00%</td>
+            <td id="ltc-h">0.00</td>
+            <td id="ltc-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/etc.png" alt="etc">ETC-USD</th>
+            <td>Ethereum Classic USD</td>
+            <td id="etc-p">0.00</td>
+            <td id="etc-cc">0.00</td>
+            <td id="etc-cp">0.00%</td>
+            <td id="etc-h">0.00</td>
+            <td id="etc-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/miota.png" alt="iot">IOT-USD</th>
+            <td>MIOTA USD</td>
+            <td id="iot-p">0.00</td>
+            <td id="iot-cc">0.00</td>
+            <td id="iot-cp">0.00%</td>
+            <td id="iot-h">0.00</td>
+            <td id="iot-l">0.00</td>
+          </tr>
+          <tr>
+            <th class="symbol-header" scope="row"><img class="crypto-icon" height="32px" width="32px" src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/qtum.png" alt="qtum">QTUM-USD</th>
+            <td>Qtum USD</td>
+            <td id="qtum-p">0.00</td>
+            <td id="qtum-cc">0.00</td>
+            <td id="qtum-cp">0.00%</td>
+            <td id="qtum-h">0.00</td>
+            <td id="qtum-l">0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!--Sector Performance-->
+    <section></section>
+    <!--Winners and Losers-->
+    <section></section>
+    <!--Individual Stocks-->
+    <section></section>
+    <!--News Search-->
+    <section></section>
+    <!--Footer-->
+    <footer id="foot-jumbo" class="jumbotron" style="padding-bottom: 20px;">
+      <div class="container">
+        <img id="foot-logo" src="images/logo.png" width="64px" height="64px" alt="foot-logo">
+        <h4>SE Fortune Capital</h4>
+        <p class="lead" style="margin: 0 auto 40px;">Invest like a boss</p>
+        <p>2018© SE Fortune Capital — All Rights Reserved | site map | terms & conditions | privacy policy | accessibility policy</p>
+        <p style="margin: 20px auto 60px">Investment Products: Not FDIC-Insured · No Bank Guarantee · May Lose Value</p>
+        <p class="legal">As a private investor, you need to request verbal and/or written information and explanations until you are sure you understand the warnings. Don't stop until you are fully aware, in quantitative terms, of what you stand to gain and lose, and what other potential investments there are with different risk/reward ratios.</p>
+        <p class="legal">It is essential that investment risk warnings be clear and sufficient not only to provide legal protection, but also to ensure that the message truly gets home. Firms and advisors should only sell products with a warning that conveys the real level of risk clearly. Unfortunately, what should be done and what is common practice are two different things. As an investor, it's crucial to know how much of your money you could lose and what circumstances could cause this to occur. If you are uncomfortable with the risks of the investment, remember there are always lower-risk alternatives.</p>
+        <p class="legal" style="margin: 0; margin-top: 20px;"><em>Note: This is a mock project, not a real business.</em></p>
+        <p class="legal" style="margin: 0;"><em>Designer: Eddy Soma</em></p>
+      </div>
+    </footer>
+    <!--JavaScripts Go Here-->
+    <div id="javascripts" style="display: none;">
+      <!--JQuery-->
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <!--Popper JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <!--Bootstrap JS-->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <!--Local JS-->
+      <script src="js/utilities.js"></script>
+      <script src="js/news.js"></script>
+    </div>
+  </body>
+</html>

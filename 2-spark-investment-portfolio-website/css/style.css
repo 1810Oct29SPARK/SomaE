@@ -11,6 +11,18 @@ blockquote footer {
 	margin-top: 20px;
 }
 
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+thead {
+	font-size: 20px;
+	background-color: #0084ffda;
+	color: white;
+}
+
 .show {
 	display: block;
 }
@@ -65,6 +77,31 @@ blockquote footer {
 	font-size: 14px;
 	text-align: left;
 	color: white;
+}
+
+.sect {
+	margin-top: 80px;
+}
+
+.symbol-header {
+	color: #0081f2;
+	font-size: 16px;
+}
+
+.symbol-header + td + td{
+	font-weight: 600;
+}
+
+.crypto-icon {
+	margin-right: 10px;
+}
+
+.up {
+	color: #093;
+}
+
+.down {
+	color: #ff333a;
 }
 
 #navbar-brand {
