@@ -61,3 +61,14 @@ const shortenName = function(name) {
 	}
 	return finalName;
 }
+
+// Determine Whether It is Business Hour
+const isBusinessHour = function(date) {
+	if (date.getDay() == 0 || date.getDay() == 6) {
+		return false;
+	}
+	else if (date.getHours() < 9 || date.getHours() > 16) {
+		return false;
+	}
+	return true;
+}

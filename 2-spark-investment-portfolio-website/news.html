@@ -321,11 +321,91 @@
       </div>
     </section>
     <!--Individual Stocks-->
-    <section></section>
-    <!--News Search-->
-    <section></section>
+    <section id="stock-search" class="sect">
+      <div class="container">
+        <h1 style="margin-bottom: 80px;">Detailed Stock Data and News</h1>
+      </div>
+      <div class="container text-center">
+        <h1 style="text-transform: none; font-size: 24px;" class="text-info">Ticker Symbol Lookup</h1>
+        <div style="margin-top: 0;" class="lead text-secondary">e.g. AAPL</div>
+        <div class="input-group mb-3">
+          <input id="ticker" type="text" class="form-control" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button id="search" class="btn btn-outline-info" type="button" id="button-addon2">Search</button>
+          </div>
+        </div>
+        <div id="error-zone" style="display: none;">
+          <div class="alert alert-danger" role="alert">We cannot find this symbol</div>
+        </div>
+        <div id="response-zone" style="display: none">
+          <div class="card" style="border: none;">
+            <div class="card-header" style="border: lightgrey 1px solid; border-radius: 5px;">
+              <div style="font-size: 28px;" class="row">
+                <div class="col-3 text-left">
+                  <div id="key-symbol" style="font-size: 28px;" class="stock-symbol">Symbol</div>
+                </div>
+                <div id="key-p" class="col-3">$0.00</div>
+                <div id="key-cc" class="col-3">0.00</div>
+                <div id="key-cp" class="col-3">0.00%</div>
+                <div class="col-12 text-left">
+                  <div id="key-name" style="font-size: 18px;" class="company-name">Company Name</div>
+                </div>
+              </div>
+            </div>
+            <div style="background-color: white; border: none; margin-top: 10px;" class="card-header">
+              <div style="font-size: 28px; color: #0081f2" class="text-left font-weight-bold">Key Stock Data</div>
+            </div>
+            <div id="key-data-body" style="font-size: 18px;" class="card-body">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="row">
+                    <div class="col-6 text-left">Open</div>
+                    <div id="key-op" class="col-6">0.00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left">Previous Close</div>
+                    <div id="key-pc" class="col-6">0.00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left">High</div>
+                    <div id="key-h" class="col-6">0.00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left">Year High</div>
+                    <div id="key-yh" class="col-6">0.00</div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="row">
+                    <div class="col-6 text-left">Close</div>
+                    <div id="key-cl" class="col-6">0.00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left">P/E Ratio</div>
+                    <div id="key-pe" class="col-6">0.00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left">Low</div>
+                    <div id="key-l" class="col-6">0.00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left">Year Low</div>
+                    <div id="key-yl" class="col-6">0.00</div>
+                  </div>
+                </div>
+              </div>
+              <div style="background-color: grey; width: 100%; height: 3px; margin-top: 20px;"></div>
+            </div>
+            <div style="background-color: white; border: none; margin-top: 10px;" class="card-header">
+              <div style="font-size: 28px; color: #0081f2" class="text-left font-weight-bold">Recent News</div>
+            </div>
+            <div id="news-zone" class="card-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Footer-->
-    <footer id="foot-jumbo" class="jumbotron" style="padding-bottom: 20px;">
+    <footer id="foot-jumbo" class="jumbotron" style="padding-bottom: 20px; margin-top: 80px;">
       <div class="container">
         <img id="foot-logo" src="images/logo.png" width="64px" height="64px" alt="foot-logo">
         <h4>SE Fortune Capital</h4>
