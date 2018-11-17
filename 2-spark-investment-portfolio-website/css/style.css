@@ -23,6 +23,10 @@ thead {
 	color: white;
 }
 
+form small {
+	font-size: 14px;
+}
+
 .show {
 	display: block;
 }
@@ -141,6 +145,43 @@ thead {
 	margin-bottom: 30px;
 }
 
+.page-link.text-color-profile:hover {
+	color: #470672
+}
+
+.bg-color-profile {
+	color: white;
+	background-color: #56068ce0;
+}
+
+.text-color-profile {
+	color: #57068c;
+	background-color: white;
+}
+
+.btn-profile {
+	color: white;
+	background-color: #57068c;
+}
+
+.btn-profile:hover {
+	color: white;
+	background-color: #470672;
+}
+
+.pill-profile {
+	color: #57068c;
+}
+
+.pill-profile:hover {
+	color: #470672;
+}
+
+.pill-profile.active {
+	color: white !important;
+	background-color: #57068c !important;
+}
+
 #navbar-brand {
 	margin-left: 20px;
 	font-size: 30px;
@@ -179,15 +220,6 @@ thead {
 
 #head-hero {
 	background-color: white;
-}
-
-#portBtn {
-	background-color: rgba(0, 128, 0, 0.7);
-	color: white;
-}
-
-#portBtn:hover {
-	background-color: green;
 }
 
 #newsBtn {
@@ -313,4 +345,12 @@ thead {
 #news-zone .lead {
 	font-size: 16px;
 	color: grey;
+}
+
+#register-form, #login-form {
+	font-size: 20px;
+}
+
+#action-tabs a {
+	margin: 10px 0;
 }

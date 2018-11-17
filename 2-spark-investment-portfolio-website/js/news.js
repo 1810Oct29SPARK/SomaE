@@ -1,5 +1,13 @@
 // Formatting data cells for each crypto
 const formatCrypto = function(data, symbol) {
+	if (data.latestPrice == null) {
+		$(symbol + "p").html("N/A");
+		$(symbol + "h").html("N/A");
+		$(symbol + "l").html("N/A");
+		$(symbol + "cc").html("N/A");
+		$(symbol + "cp").html("N/A");
+		return;
+	}
 	$(symbol + "p").html(leastTwoDecimal(data.latestPrice));
 	$(symbol + "h").html(leastTwoDecimal(data.high));
 	$(symbol + "l").html(leastTwoDecimal(data.low));
@@ -7,7 +15,7 @@ const formatCrypto = function(data, symbol) {
 		$(symbol + "cc").html("+" + leastTwoDecimal(parseFloat(data.change)));
 		$(symbol + "cc").removeClass("down");
 		$(symbol + "cc").addClass("up");
-		$(symbol + "cp").html("+" + toTwoDecimal(parseFloat(data.changePercent) * 100) + "%");
+		$(symbol + "cp").html("+" + leastTwoDecimal(parseFloat(data.changePercent) * 100) + "%");
 		$(symbol + "cp").removeClass("down");
 		$(symbol + "cp").addClass("up");
 	}
@@ -321,9 +329,9 @@ $(function() {
 	getSectorData();
 	getGainersData();
 	getLosersData();
+	setInterval(getCryptoData, 5000);
 	// Automatically update all data during business hours
 	if (isBusinessHour(new Date())) {
-		setInterval(getCryptoData, 5000);
 		setInterval(getSectorData, 5000);
 		setInterval(getGainersData, 5000);
 		setInterval(getLosersData, 5000);
