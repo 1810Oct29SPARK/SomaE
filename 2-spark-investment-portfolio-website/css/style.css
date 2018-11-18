@@ -182,6 +182,10 @@ form small {
 	background-color: #57068c !important;
 }
 
+.no-show {
+	display: none;
+}
+
 #navbar-brand {
 	margin-left: 20px;
 	font-size: 30px;

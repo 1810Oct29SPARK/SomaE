@@ -72,3 +72,9 @@ const isBusinessHour = function(date) {
 	}
 	return true;
 }
+
+// Capitalize only the first character of a string
+const toTitle = function(string) {
+	string = string.toLowerCase();
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}

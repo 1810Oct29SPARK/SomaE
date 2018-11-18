@@ -15,7 +15,7 @@ const formatCrypto = function(data, symbol) {
 		$(symbol + "cc").html("+" + leastTwoDecimal(parseFloat(data.change)));
 		$(symbol + "cc").removeClass("down");
 		$(symbol + "cc").addClass("up");
-		$(symbol + "cp").html("+" + leastTwoDecimal(parseFloat(data.changePercent) * 100) + "%");
+		$(symbol + "cp").html("+" + toTwoDecimal(parseFloat(data.changePercent) * 100) + "%");
 		$(symbol + "cp").removeClass("down");
 		$(symbol + "cp").addClass("up");
 	}
