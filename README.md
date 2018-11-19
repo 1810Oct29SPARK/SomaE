@@ -5,3 +5,8 @@
 1. Bitcoin Website (presentation topic)
 	* HTML
 	* CSS
+2. SEFC Investment Website (spark project)
+	* HTML
+	* CSS & Bootstrap
+	* JavaScript & jQuery
+	* Firebase

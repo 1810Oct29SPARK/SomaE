@@ -592,7 +592,7 @@ const startActivities = function() {
 	getPortfolioSnapshot(dashboardRefresh);
 }
 
-// Wait until the document is ready for JQuery
+// Wait until the document is ready for jQuery
 $(function() {
 	// Initialize Firebase
 	firebaseInit();

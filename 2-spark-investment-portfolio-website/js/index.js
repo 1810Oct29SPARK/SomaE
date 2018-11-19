@@ -22,7 +22,7 @@ let updateQuotes = function() {
 	});
 };
 
-// Wait until the document is ready for JQuery
+// Wait until the document is ready for jQuery
 $(function() {
 	// Show banner header
 	$("#first-h").slideDown(2000, function() {

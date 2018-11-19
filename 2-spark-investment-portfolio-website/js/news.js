@@ -322,7 +322,7 @@ const getSearchResult = function(symbol) {
 	fetchFromAPI(makeStockQuoteUrl(symbol), fetchOptionsDefault, animateSearch, displayError);
 }
 
-// Wait until the document is ready for JQuery
+// Wait until the document is ready for jQuery
 $(function() {
 	// Call updates to data on startup
 	getCryptoData();
