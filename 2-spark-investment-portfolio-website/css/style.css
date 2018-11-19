@@ -337,7 +337,12 @@ form small {
 	cursor: pointer;
 }
 
-#news-zone a:hover, #news-zone a:visited {
+#news-zone a:hover {
+	color: crimson;
+	text-decoration: underline;
+}
+
+#news-zone a:visited {
 	color: inherit;
 	text-decoration: none;
 }
