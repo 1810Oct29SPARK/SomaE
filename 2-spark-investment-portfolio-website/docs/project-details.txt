@@ -1,0 +1,22 @@
+Project (Website) Name:
+SE Fortune Capital (SEFC)
+
+Page Details:
+1. index.html - Home page of SEFC. Links to other two pages. Introduce investment. Famous quotes from investors. Business features.
+
+2. news.html - Data aggregation page of SEFC. Latest cryptocurrency market performance. Some stock market data. Stock ticker lookup.
+
+3. portfolio.html - User portfolio management page of SEFC. Create an investment portfolio. Manage portfolio and make transactions. Dynamically updated asset tables and charts.
+
+Use Cases:
+1. Users will understand the value of having an investment portfolio, see why successful people invest, and know what SEFC has to offer.
+2. Users can view dynamically updated cryptocurrency prices 24/7.
+3. Users can view sector performance and know the top gainers and losers dynamically when the market is open.
+4. Users can use our search engine to lookup any individual stock performance.
+5. Users can view recent news of any public company using the search engine.
+6. Users can create investment portfolios with SEFC by opening new accounts.
+7. Users can deposit and withdraw USD to and from their accounts instantly.
+8. Users can buy and sell any common stock and a selection of 10 cryptocurrencies.
+9. Users can view dynamically the total value of their portfolio.
+10. Users can use the asset chart and table to keep track of their investment actions.
+11. Users can close their accounts if they no longer want to be SEFC customers.
