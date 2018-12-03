@@ -92,6 +92,9 @@ local.properties
 
 .sts4-cache/
 
+HelloWorld/
+maven.project/
+
 # ==========Node gitignore==========
 # Logs
 logs
