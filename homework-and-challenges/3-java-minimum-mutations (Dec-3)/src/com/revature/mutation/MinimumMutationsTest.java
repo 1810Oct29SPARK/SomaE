@@ -23,7 +23,12 @@ public class MinimumMutationsTest {
 		
 		// Start the mutation tests
 		System.out.println("\n==========Minimum Mutations Test==========\n");
-		//
+		myGeneLab.findMutations("AACCGGTT", "AACCGGTT");
+		myGeneLab.findMutations("AACCGGTT", "EEACGGTA");
+		myGeneLab.findMutations("AACCGGTT", "AAACGGTA");
+		myGeneLab.findMutations("AACCGGTA", "GGCCTGTG");
+		myGeneLab.findMutations("AAAAAAAA", "TTTTTTTT");
+		myGeneLab.findMutations("EGHABBTG", "AACCGGTT");
 
 	}
 
