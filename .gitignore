@@ -94,6 +94,7 @@ local.properties
 
 HelloWorld/
 maven.project/
+jdbcDemo/
 
 # ==========Node gitignore==========
 # Logs
