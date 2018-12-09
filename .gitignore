@@ -92,6 +92,9 @@ local.properties
 
 .sts4-cache/
 
+# Credentials
+*.properties
+
 HelloWorld/
 maven.project/
 jdbcDemo/
