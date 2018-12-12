@@ -95,9 +95,7 @@ local.properties
 # Credentials
 *.properties
 
-HelloWorld/
-maven.project/
-jdbcDemo/
+spring-workspace/
 
 # ==========Node gitignore==========
 # Logs
