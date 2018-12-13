@@ -95,8 +95,6 @@ local.properties
 # Credentials
 *.properties
 
-spring-workspace/
-
 # ==========Node gitignore==========
 # Logs
 logs
